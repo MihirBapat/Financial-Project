@@ -1,0 +1,51 @@
+You are building a complete production-ready Gig Cashflow Index (GCI) system.
+
+IMPORTANT CONSTRAINTS:
+- The project structure already exists. DO NOT change folder structure.
+- DO NOT delete or overwrite existing working files unless necessary.
+- DO NOT introduce new libraries beyond:
+  FastAPI, pandas, numpy, scikit-learn, sqlalchemy, psycopg2, shap
+- All code must be simple, modular, and runnable.
+
+OBJECTIVE:
+Build the full end-to-end system inside the existing project.
+
+SYSTEM REQUIREMENTS:
+1. Synthetic transaction data generator
+2. Data cleaning pipeline
+3. Feature engineering module
+4. Manipulation detection (Isolation Forest)
+5. Probability of Default model
+6. GCI score calculation (300–900 scale)
+7. PostgreSQL integration (store results)
+8. FastAPI endpoints:
+   - upload transactions
+   - get borrower data
+   - get GCI score
+   - get anomaly score
+9. Ensure all modules connect properly
+
+EXECUTION RULES:
+- Build step-by-step internally but output final working code
+- Use correct imports based on current structure
+- Ensure no module import errors
+- Ensure database connection is used where required
+- Include comments for clarity
+
+OUTPUT FORMAT:
+- File path
+- Full code for each file
+- No explanations unless necessary
+
+
+Also build a minimal React frontend with:
+- Dashboard page
+- GCI score display
+- Borrower data view
+- API integration with FastAPI
+FINAL GOAL:
+System should run with:
+uvicorn backend.api.main:app --reload
+
+And support full pipeline:
+Data → Features → Anomaly → Model → Score → API
